@@ -10,5 +10,6 @@
 </head>
 <body>
     <marquee><h1>This is conatct Page</h1></marquee>
+    <p>Phone: 01518979969</p>
 </body>
 </html>
