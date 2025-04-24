@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\CommentController;
+use App\Http\Controllers\TaskController;
 
 
 Route::get('/', function () {
@@ -36,4 +37,6 @@ Route::put('/comments/{comment}', [CommentController::class, 'update'])->name('c
 // Delete a specific comment
 Route::delete('/comments/{comment}', [CommentController::class, 'destroy'])->name('comments.destroy');
 
+
+Route::resource('tasks', TaskController::class); 
 
